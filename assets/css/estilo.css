@@ -6,6 +6,7 @@
 
 :root {
     --CorDestaque: #000;
+    --Laranja: rgba(243, 153, 18, 0.932);
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 header {
     height: 100px;
     display: flex;
-    transform: translateY(50%);
+    transform: translateY(100%);
     /* 
     
         Comando usado para mudar a posição de um elemento, atráves de seu eixo
@@ -33,9 +34,13 @@ header h1 {
     color: var(--CorDestaque);
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: var(--Laranja);
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     flex-grow: 1;
 }
@@ -45,6 +50,12 @@ button {
     height: 40px;
     cursor: pointer;
     margin-left: 12px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: var(--Laranja);
+    color: black;
+    font-size: .8rem;
+    font-weight: bold;
 }
 
 sup {
